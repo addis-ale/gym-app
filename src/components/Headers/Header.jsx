@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <div className="header">
       <img src={Logo} alt="gym-logo" className="logo" />
-      <ul>
+      <ul className="header-menu">
         <li>Home</li>
         <li>Program</li>
         <li>Why us</li>
