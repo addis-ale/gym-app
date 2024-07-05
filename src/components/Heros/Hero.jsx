@@ -27,6 +27,15 @@ export default function Hero() {
             </span>
           </div>
         </div>
+        {/*figure  */}
+        <div className="figures">
+          <div>
+            <span>+140</span>
+            <span>Expert coaches</span>
+          </div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
       <div className="right-h">right</div>
     </div>
