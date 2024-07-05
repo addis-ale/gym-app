@@ -27,10 +27,11 @@
 .left-r > :nth-child(3) {
   width: 14rem;
   grid-column: 2/3;
-  grid-row: 2;
 }
 .left-r > :nth-child(4) {
   width: 10rem;
   grid-column: 3/4;
-  grid-row: 2;
+}
+.right-r {
+  flex: 1 1;
 }
