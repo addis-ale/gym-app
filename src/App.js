@@ -5,6 +5,7 @@ import Plan from "./components/Plans/Plan";
 import Testimonial from "./components/Testimonial/Testimonial";
 
 import "./App.css";
+import JoinUs from "./components/JoinUs/JoinUs";
 export default function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ export default function App() {
       <Reason />
       <Plan />
       <Testimonial />
+      <JoinUs />
     </div>
   );
 }

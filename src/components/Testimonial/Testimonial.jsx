@@ -12,7 +12,7 @@ export default function Testimonial() {
   }
   function handleReverse() {
     setCurrent((current) => current - 1);
-    if (current === 0) setCurrent(2);
+    if (current === 0) setCurrent(testimonialsData.length - 1);
     // current > 0 &&
   }
   return (
