@@ -31,7 +31,49 @@
 .left-r > :nth-child(4) {
   width: 10rem;
   grid-column: 3/4;
+  height: 11.2rem;
 }
 .right-r {
   flex: 1 1;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+}
+.right-r > :nth-child(1) {
+  font-weight: bold;
+  color: var(--orange);
+}
+.right-r > :nth-child(4) {
+  color: var(--gray);
+  font-weight: normal;
+}
+.right-header {
+  font-weight: bold;
+  font-size: 3rem;
+  color: white;
+}
+.why {
+  color: white;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.why > div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1rem;
+}
+.why > div > img {
+  width: 2rem;
+  height: 2rem;
+}
+.partners {
+  display: flex;
+  gap: 1rem;
+}
+.partners > img {
+  width: 2.5rem;
 }
