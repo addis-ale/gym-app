@@ -1,6 +1,7 @@
 import Hero from "./components/Heros/Hero";
 import Program from "./components/program/Program";
 import Reason from "./components/Reasons/Reason";
+import Plan from "./components/Plans/Plan";
 
 import "./App.css";
 export default function App() {
@@ -9,6 +10,7 @@ export default function App() {
       <Hero />
       <Program />
       <Reason />
+      <Plan />
     </div>
   );
 }

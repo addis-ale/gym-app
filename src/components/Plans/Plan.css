@@ -1,0 +1,72 @@
+.plan {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 0 2rem;
+  margin-top: -4rem;
+  position: relative;
+}
+.plan-header {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  gap: 2rem;
+  padding: 0rem 2rem;
+}
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--caloryCard);
+  color: white;
+  width: 15rem;
+  padding: 1.5rem;
+}
+.card:nth-child(2) {
+  transform: scale(1.1);
+  background-color: orange;
+}
+.card:nth-child(2) > svg {
+  fill: white;
+}
+.card:nth-child(2) > button {
+  color: var(--orange);
+}
+.card > svg {
+  fill: var(--orange);
+  width: 2rem;
+  height: 2rem;
+}
+.card > span:nth-of-type(1) {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.card > span:nth-of-type(2) {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.more {
+  font-size: 0.8rem;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.features > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.features > div > img {
+  width: 1rem;
+}
