@@ -21,7 +21,7 @@ export default function Program() {
 function Card({ data }) {
   return (
     <div className="catagory">
-      <img src={data.image} alt="" />
+      {data.image}
       <span>{data.heading}</span>
       <span>{data.details}</span>
       <div className="join-now">
