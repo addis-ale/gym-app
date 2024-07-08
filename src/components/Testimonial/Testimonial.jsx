@@ -3,7 +3,7 @@ import { testimonialsData } from "../../data/testimonialsData";
 import lArrow from "../../assets/leftArrow.png";
 import rArrow from "../../assets/rightArrow.png";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Testimonial() {
   const [current, setCurrent] = useState(0);
@@ -26,15 +26,17 @@ export default function Testimonial() {
           <div className="stroke-text">what they</div>
           <span>say about us</span>
         </div>
-        <motion.p
-          key={current}
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 1, x: 100 }}
-          transition={transition}
-        >
-          {testimonialsData[current].review}
-        </motion.p>
+        <AnimatePresence mode="wait">
+          <motion.p
+            key={current}
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 100 }}
+            transition={{ ...transition, duration: 2 }}
+          >
+            {testimonialsData[current].review}
+          </motion.p>
+        </AnimatePresence>
         <motion.div
           key={current}
           initial={{ opacity: 0, x: 100 }}
