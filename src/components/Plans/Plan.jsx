@@ -5,6 +5,8 @@ import Arrow from "../../assets/rightArrow.png";
 export default function Plan() {
   return (
     <div className="plan">
+      <div className="blurr plan-blurr-1"></div>
+      <div className="blurr plan-blurr-2"></div>
       <div className="plan-header">
         <span className="stroke-text">ready to start </span>
 

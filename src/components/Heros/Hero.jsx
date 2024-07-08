@@ -8,6 +8,7 @@ import Calories from "../../assets/calories.png";
 export default function Hero() {
   return (
     <div className="hero">
+      <div className="blurr hero-blur"></div>
       <div className="left-h">
         <Header />
         {/*the-best-ad*/}

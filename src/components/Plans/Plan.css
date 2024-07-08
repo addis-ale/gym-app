@@ -70,3 +70,15 @@
 .features > div > img {
   width: 1rem;
 }
+.plan-blurr-1 {
+  width: 32rem;
+  height: 23rem;
+  left: 0;
+  top: 6rem;
+}
+.plan-blurr-2 {
+  width: 32rem;
+  height: 23rem;
+  right: 0;
+  top: 10rem;
+}

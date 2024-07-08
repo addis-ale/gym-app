@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+.footer > div {
+  display: flex;
+  gap: 4rem;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.footer > div > img {
+  width: 2rem;
+  height: 2rem;
+}
+.footer > :nth-child(3) {
+  width: 10rem;
+}
+hr {
+  border: 1px solid var(--lightgray);
+  width: 100%;
+}
+.footer-blurr {
+  width: 26rem;
+  height: 10rem;
+}
