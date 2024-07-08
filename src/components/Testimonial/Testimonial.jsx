@@ -19,7 +19,7 @@ export default function Testimonial() {
   }
   const transition = { type: `tween`, duration: 3 };
   return (
-    <div className="testimonial">
+    <div className="testimonial" id="testimonials">
       <div className="testimonial-l">
         <span>testimonial</span>
         <div>

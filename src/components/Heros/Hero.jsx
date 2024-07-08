@@ -6,12 +6,13 @@ import hero_image_back from "../../assets/hero_image_back.png";
 import Heart from "../../assets/heart.png";
 import Calories from "../../assets/calories.png";
 import { motion } from "framer-motion";
+import CountUp from "react-countup";
 
 export default function Hero() {
   const transition = { type: `tween`, duration: 3 };
   const mobile = window.innerWidth <= 768;
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <div className="blurr hero-blur"></div>
       <div className="left-h">
         <Header />
@@ -43,15 +44,15 @@ export default function Hero() {
         {/*figure  */}
         <div className="figures">
           <div>
-            <span>+140</span>
+            <CountUp start={10} end={143} duration={3} prefix="+" />
             <span>Expert coaches</span>
           </div>
           <div>
-            <span>+978</span>
+            <CountUp start={900} end={978} duration={3} prefix="+" />
             <span>members joined</span>
           </div>
           <div>
-            <span>+50</span>
+            <CountUp start={1} end={50} duration={3} prefix="+" />
             <span>fitness programs</span>
           </div>
         </div>
