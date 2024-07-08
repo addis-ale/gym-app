@@ -99,26 +99,32 @@ p {
   }
   .testimonial-r {
     position: relative;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
   }
   .arrows {
     position: relative;
-    bottom: -2rem;
+    bottom: 0rem;
     display: flex;
-    left: 6rem;
+    left: 0rem;
   }
   .testimonial-r > :nth-child(1) {
     display: none;
+    position: relative;
   }
   .testimonial-r > :nth-child(2) {
     display: none;
+    position: relative;
   }
   .testimonial-r > img {
     position: relative;
-    width: 15rem;
-    height: 20rem;
     object-fit: cover;
-    left: 0.5rem;
+
+    top: 0;
+    right: 0;
+    align-self: center;
   }
 }
