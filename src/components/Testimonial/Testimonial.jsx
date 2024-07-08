@@ -3,6 +3,8 @@ import { testimonialsData } from "../../data/testimonialsData";
 import lArrow from "../../assets/leftArrow.png";
 import rArrow from "../../assets/rightArrow.png";
 import { useState } from "react";
+import { motion } from "framer-motion";
+
 export default function Testimonial() {
   const [current, setCurrent] = useState(0);
   function handleForward() {
@@ -15,6 +17,7 @@ export default function Testimonial() {
     if (current === 0) setCurrent(testimonialsData.length - 1);
     // current > 0 &&
   }
+  const transition = { type: `tween`, duration: 3 };
   return (
     <div className="testimonial">
       <div className="testimonial-l">
@@ -23,16 +26,46 @@ export default function Testimonial() {
           <div className="stroke-text">what they</div>
           <span>say about us</span>
         </div>
-        <p>{testimonialsData[current].review}</p>
-        <div>
+        <motion.p
+          key={current}
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 1, x: 100 }}
+          transition={transition}
+        >
+          {testimonialsData[current].review}
+        </motion.p>
+        <motion.div
+          key={current}
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 1, x: -100 }}
+          transition={transition}
+        >
           <span>{testimonialsData[current].name}</span>
           <span> - {testimonialsData[current].status}</span>
-        </div>
+        </motion.div>
       </div>
       <div className="testimonial-r">
-        <div></div>
-        <div></div>
-        <img src={testimonialsData[current].image} alt="" />
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ ...transition, duration: 2 }}
+        ></motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ ...transition, duration: 2 }}
+        ></motion.div>
+        <motion.img
+          src={testimonialsData[current].image}
+          alt=""
+          key={current}
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 1, x: -100 }}
+          transition={transition}
+        />
         <div className="arrows">
           {" "}
           <img src={lArrow} alt="" onClick={handleReverse} />
