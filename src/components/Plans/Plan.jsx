@@ -1,7 +1,7 @@
 import "./Plan.css";
 import tick from "../../assets/whiteTick.png";
 import { plansData } from "../../data/plansData";
-import Arrow from "../../assets/rightArrow.png";
+
 export default function Plan() {
   return (
     <div className="plan">
